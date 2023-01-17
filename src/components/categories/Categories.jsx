@@ -53,12 +53,12 @@ function Categories(props) {
                 {!!subCategories?.children?.length && (
                     <StyledBox>
                         <H2 pl='50px' mb='20px'>
-                            {subCategories?.name}
+                            {subCategories?.name_uz}
                         </H2>
 
                         {subCategories?.children?.map((item) => (
                             <StyledItem key={item.id}>
-                                <Span>{item.name}</Span>
+                                <Span>{item.name_uz}</Span>
                                 {!!item.children.length && <ArrowRight />}
                             </StyledItem>
                         ))}
